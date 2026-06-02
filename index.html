@@ -8,8 +8,51 @@
 <meta name="keywords" content="강남역 오마카세,서초 오마카세,강남역 스시,기념일 오마카세,강남 데이트 오마카세,강남 스시 오마카세,강남역 맛집,서초 스시"/>
 <meta property="og:title" content="스시려 프리미엄 — 강남역 도보 7분 오마카세"/>
 <meta property="og:description" content="런치 70,000원 · 디너 140,000원. 룸+다찌 보유. 캐치테이블 예약."/>
-<meta property="og:image" content="https://d12zq4w4guyljn.cloudfront.net/750_750_20240507085900100_photo_dc5ead075dce.webp"/>
+<meta property="og:image" content="https://d12zq4w4guyljn.cloudfront.net/20240507085900100_photo_dc5ead075dce.webp"/>
 <meta property="og:type" content="restaurant"/>
+<link rel="canonical" href="https://omaka-reo-website.vercel.app/"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "스시려 프리미엄",
+  "description": "강남역 5번 출구 도보 7분, 서초 아크로텔 2층. 런치 70,000원 · 디너 140,000원. 룸+다찌 보유. 강남 기념일·데이트 오마카세.",
+  "image": "https://d12zq4w4guyljn.cloudfront.net/20240507085900100_photo_dc5ead075dce.webp",
+  "telephone": "02-525-0900",
+  "url": "https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium",
+  "servesCuisine": "일식, 스시, 오마카세",
+  "priceRange": "₩₩₩",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "효령로77길 34 아크로텔 2층 206호",
+    "addressLocality": "서초구",
+    "addressRegion": "서울",
+    "addressCountry": "KR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.4969,
+    "longitude": 127.0267
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "11:40",
+      "closes": "14:40"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "18:30",
+      "closes": "21:50"
+    }
+  ],
+  "hasMenu": "https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium",
+  "acceptsReservations": "true",
+  "menu": "https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium"
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Sans+KR:wght@300;400;500&family=Noto+Serif+KR:wght@300;400&display=swap" rel="stylesheet"/>
@@ -273,6 +316,10 @@ footer{background:var(--d-bg2);border-top:1px solid var(--d-border);padding:4rem
 .foot-copy{font-size:.62rem;letter-spacing:.08em;color:var(--dt3)}
 .foot-biz{font-size:.6rem;color:var(--dt3);letter-spacing:.06em;line-height:1.6;text-align:right}
 
+/* ── GALLERY HOVER ───────────────────── */
+.gallery-item img{transition:transform .6s var(--ease)}
+.gallery-item:hover img{transform:scale(1.06)}
+
 /* ── FIXED MOBILE BAR ─────────────────── */
 .fixed-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;background:rgba(28,22,16,.97);backdrop-filter:blur(12px);border-top:1px solid var(--d-border);padding:.85rem 1.2rem;gap:.7rem}
 .fb-btn{flex:1;text-align:center;font-size:.7rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;padding:.9rem 1rem;border-radius:2px;transition:all .22s}
@@ -310,7 +357,8 @@ footer{background:var(--d-bg2);border-top:1px solid var(--d-border);padding:4rem
   .foot-grid{grid-template-columns:1fr;gap:2rem}
   .foot-bottom{flex-direction:column;align-items:flex-start}
   .fixed-bar{display:flex}
-  footer{padding:3.5rem 0 6rem}
+  footer{padding:3.5rem 0 7rem}
+  .final-cta{padding-bottom:7rem}
   .compare-table{display:block;overflow-x:auto}
   .final-cta-btns{flex-direction:column;align-items:center}
   .final-cta-btns .btn{width:100%;max-width:320px}
@@ -532,10 +580,10 @@ footer{background:var(--d-bg2);border-top:1px solid var(--d-border);padding:4rem
 
 <!-- GALLERY (풀블리드, 섹션 구분용) -->
 <div style="display:grid;grid-template-columns:repeat(4,1fr);height:240px" aria-hidden="true">
-  <div style="overflow:hidden"><img src="https://d12zq4w4guyljn.cloudfront.net/20240322125007_photo1_21dfcde4afc6.webp" alt="" loading="lazy" style="transition:transform .6s"/></div>
-  <div style="overflow:hidden"><img src="https://d12zq4w4guyljn.cloudfront.net/20240322125007_photo2_21dfcde4afc6.webp" alt="" loading="lazy" style="transition:transform .6s"/></div>
-  <div style="overflow:hidden"><img src="https://d12zq4w4guyljn.cloudfront.net/20240322125007_photo3_21dfcde4afc6.webp" alt="" loading="lazy" style="transition:transform .6s"/></div>
-  <div style="overflow:hidden"><img src="https://d12zq4w4guyljn.cloudfront.net/20240507085900100_photo_dc5ead075dce.webp" alt="" loading="lazy" style="transition:transform .6s"/></div>
+  <div class="gallery-item" style="overflow:hidden"><img src="https://d12zq4w4guyljn.cloudfront.net/20240322125007_photo1_21dfcde4afc6.webp" alt="" loading="lazy"/></div>
+  <div class="gallery-item" style="overflow:hidden"><img src="https://d12zq4w4guyljn.cloudfront.net/20240322125007_photo2_21dfcde4afc6.webp" alt="" loading="lazy"/></div>
+  <div class="gallery-item" style="overflow:hidden"><img src="https://d12zq4w4guyljn.cloudfront.net/20240322125007_photo3_21dfcde4afc6.webp" alt="" loading="lazy"/></div>
+  <div class="gallery-item" style="overflow:hidden"><img src="https://d12zq4w4guyljn.cloudfront.net/20240507085900100_photo_dc5ead075dce.webp" alt="" loading="lazy"/></div>
 </div>
 
 <!-- VISIT POINTS -->
@@ -783,7 +831,7 @@ footer{background:var(--d-bg2);border-top:1px solid var(--d-border);padding:4rem
         <p class="foot-logo">스시려 <em>Premium</em></p>
         <p class="foot-tagline">서울 서초, 예약제 스시 오마카세.<br/>강남역 5번 출구 도보 7분.</p>
         <div class="foot-sns">
-          <a class="sns" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="인스타그램">
+          <a class="sns" href="https://www.instagram.com/sushiryeo_premium" target="_blank" rel="noopener" aria-label="인스타그램">
             <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
           <a class="sns" href="https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium" target="_blank" rel="noopener" aria-label="캐치테이블">
