@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>스시려 프리미엄 — 강남역 오마카세 | 런치 70,000원 · 디너 140,000원</title>
+<meta name="description" content="강남역 5번 출구 도보 7분, 서초 아크로텔 2층. 런치 70,000원 · 디너 140,000원. 룸+다찌 보유. 강남 기념일·데이트 오마카세. 캐치테이블 예약."/>
+<meta name="keywords" content="강남역 오마카세,서초 오마카세,강남역 스시,기념일 오마카세,강남 데이트 오마카세,강남 스시 오마카세,강남역 맛집,서초 스시"/>
+<meta property="og:title" content="스시려 프리미엄 — 강남역 도보 7분 오마카세"/>
+<meta property="og:description" content="런치 70,000원 · 디너 140,000원. 룸+다찌 보유. 캐치테이블 예약."/>
+<meta property="og:image" content="https://d12zq4w4guyljn.cloudfront.net/750_750_20240507085900100_photo_dc5ead075dce.webp"/>
+<meta property="og:type" content="restaurant"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Sans+KR:wght@300;400;500&family=Noto+Serif+KR:wght@300;400&display=swap" rel="stylesheet"/>
+
+<style>
+/* ── TOKENS ───────────────────────────── */
+:root{
+  /* 어두운 배경 */
+  --d-bg:      #1c1610;
+  --d-bg2:     #221a12;
+  --d-surf:    #29211a;
+  --d-surf2:   #322920;
+  --d-border:  #3e3428;
+  --d-brd2:    #4f4435;
+  /* 밝은 배경 (메뉴판/한지) */
+  --l-bg:      #f5ede0;
+  --l-bg2:     #ede3d4;
+  --l-surf:    #e8ddd0;
+  --l-border:  #d4c4b0;
+  --l-brd2:    #c0ae96;
+  /* 공통 */
+  --gold:      #c8a456;
+  --gold-lt:   #e0bc78;
+  --gold-dk:   #8a6830;
+  --gold-dim:  #5a4420;
+  /* 어두운 배경 위 텍스트 */
+  --dt:        #f0e8dc;   /* 메인 */
+  --dt2:       #c8bbb0;   /* 보조 */
+  --dt3:       #8c8070;   /* 희미 */
+  /* 밝은 배경 위 텍스트 */
+  --lt:        #1e1610;   /* 메인 */
+  --lt2:       #5a4e3e;   /* 보조 */
+  --lt3:       #9a8e80;   /* 희미 */
+
+  --font-d: 'Cormorant Garamond','Noto Serif KR',Georgia,serif;
+  --font-s: 'Noto Serif KR',Georgia,serif;
+  --font-n: 'Noto Sans KR','Apple SD Gothic Neo',sans-serif;
+  --ease: cubic-bezier(.25,.46,.45,.94);
+}
+
+/* ── RESET ────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{background:var(--d-bg);color:var(--dt);font-family:var(--font-n);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;border:none;background:none;font-family:inherit;color:inherit}
+
+/* ── UTIL ─────────────────────────────── */
+.eyebrow{font-family:var(--font-n);font-size:.62rem;font-weight:400;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);display:block}
+.eyebrow.dark{color:var(--gold-dk)}
+.rule{display:block;width:24px;height:1px;background:var(--gold-dim);margin:1.2rem 0}
+.rule.dark{background:var(--gold-dk)}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* 섹션 공통 */
+.sec-dark{background:var(--d-bg)}
+.sec-dark2{background:var(--d-bg2)}
+.sec-surf{background:var(--d-surf)}
+.sec-light{background:var(--l-bg)}
+.sec-light2{background:var(--l-bg2)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 2.5rem}
+.pad{padding:6rem 0}
+.pad-sm{padding:4rem 0}
+
+/* ── BUTTONS ──────────────────────────── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:var(--font-n);font-size:.72rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;padding:1rem 2.2rem;border-radius:2px;transition:all .22s;white-space:nowrap;cursor:pointer;border:none}
+.btn-gold{background:var(--gold);color:var(--d-bg)}
+.btn-gold:hover{background:var(--gold-lt);transform:translateY(-1px)}
+.btn-outline-light{border:1px solid rgba(240,232,220,.35);color:var(--dt2)}
+.btn-outline-light:hover{border-color:var(--gold-dk);color:var(--dt)}
+.btn-outline-dark{border:1px solid var(--l-brd2);color:var(--lt2)}
+.btn-outline-dark:hover{border-color:var(--gold-dk);color:var(--lt)}
+
+/* ── NAV ──────────────────────────────── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.5rem 2.5rem;transition:background .35s var(--ease),padding .35s,border-color .35s;border-bottom:1px solid transparent}
+.nav.sc{background:rgba(28,22,16,.96);backdrop-filter:blur(14px);border-bottom-color:var(--d-border);padding:1rem 2.5rem}
+.nav-logo{font-family:var(--font-d);font-size:1.1rem;font-weight:400;letter-spacing:.14em;color:var(--dt)}
+.nav-logo em{font-style:italic;color:var(--gold)}
+.nav-links{display:flex;gap:2.5rem;list-style:none}
+.nav-links a{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dt3);transition:color .2s}
+.nav-links a:hover{color:var(--dt)}
+.nav-burger{display:none;flex-direction:column;gap:5px;padding:4px;cursor:pointer}
+.nav-burger span{display:block;width:20px;height:1px;background:var(--dt2);transition:all .3s}
+
+/* 모바일 드로어 */
+.drawer{display:none;position:fixed;inset:0;z-index:99;background:rgba(28,22,16,.98);backdrop-filter:blur(16px);flex-direction:column;align-items:center;justify-content:center;gap:2.4rem}
+.drawer.open{display:flex}
+.drawer a{font-family:var(--font-d);font-size:2rem;font-weight:300;letter-spacing:.07em;color:var(--dt);transition:color .2s}
+.drawer a:hover{color:var(--gold)}
+.drawer .d-cta{font-family:var(--font-n);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--d-bg) !important;background:var(--gold);padding:1rem 2.8rem;border-radius:2px;margin-top:.5rem}
+
+/* ── HERO ─────────────────────────────── */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.hero-img{position:absolute;inset:0}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 38%}
+.hero-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(28,22,16,.2) 0%,rgba(28,22,16,.1) 30%,rgba(28,22,16,.55) 65%,rgba(28,22,16,.96) 100%)}
+
+.hero-body{position:relative;z-index:1;padding:0 2.5rem 3.5rem}
+
+.hero-kicker{font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem}
+.hero-title{font-family:var(--font-d);font-size:clamp(3rem,9vw,7rem);font-weight:300;letter-spacing:.05em;line-height:1.06;color:#f2ead8;margin-bottom:1.6rem}
+.hero-title em{font-style:italic;color:var(--gold-lt)}
+
+/* 핵심 정보 스트립 — 3초 안에 보여야 할 것 */
+.hero-strip{display:flex;flex-wrap:wrap;gap:0;margin-bottom:2rem;border:1px solid rgba(200,164,86,.3);border-radius:3px;overflow:hidden}
+.hero-strip-item{flex:1;min-width:120px;padding:.9rem 1.4rem;border-right:1px solid rgba(200,164,86,.2);text-align:center}
+.hero-strip-item:last-child{border-right:none}
+.strip-label{font-size:.55rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dt3);margin-bottom:.2rem}
+.strip-val{font-family:var(--font-s);font-size:.92rem;font-weight:400;color:var(--dt)}
+.strip-val strong{color:var(--gold);font-weight:400}
+
+.hero-actions{display:flex;gap:.9rem;flex-wrap:wrap}
+
+/* ── INFO BAND (히어로 바로 아래) ─── */
+.info-band{background:var(--d-surf);border-bottom:1px solid var(--d-border)}
+.info-band-inner{display:flex;align-items:stretch;flex-wrap:wrap}
+.ib-item{flex:1;min-width:160px;padding:1.4rem 2rem;border-right:1px solid var(--d-border);display:flex;flex-direction:column;gap:.25rem}
+.ib-item:last-child{border-right:none}
+.ib-label{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dt3)}
+.ib-val{font-family:var(--font-s);font-size:.9rem;color:var(--dt)}
+
+/* ── ABOUT ────────────────────────────── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5.5rem;align-items:center}
+.about-photo{border-radius:3px;overflow:hidden;aspect-ratio:4/5;background:var(--d-surf)}
+h2.sec-title{font-family:var(--font-d);font-size:clamp(2rem,4.5vw,3.2rem);font-weight:300;letter-spacing:.04em;line-height:1.2;color:var(--dt)}
+h2.sec-title.dark{color:var(--lt)}
+.about-body{margin-top:1.4rem;display:flex;flex-direction:column;gap:.95rem}
+.about-body p{font-size:.9rem;line-height:1.95;color:var(--dt2)}
+.about-tags{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.5rem}
+.tag{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dt2);border:1px solid var(--d-brd2);padding:.3rem .85rem;border-radius:20px}
+.sec-cta{margin-top:2.2rem;display:flex;gap:.8rem;flex-wrap:wrap}
+
+/* ── COURSE TABLE (밝은 섹션) ─────────── */
+.ct-header{text-align:center;margin-bottom:3rem}
+.ct-header .eyebrow{justify-content:center;display:flex}
+.ct-header h2{margin-top:.8rem}
+
+/* 비교표 */
+.compare-table{width:100%;border-collapse:collapse;margin-bottom:3rem}
+.compare-table thead tr{background:var(--lt)}
+.compare-table thead th{font-family:var(--font-n);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;padding:1.2rem 1.8rem;text-align:left;font-weight:500;color:var(--lt)}
+.compare-table thead th:first-child{color:var(--lt3);font-weight:300}
+.compare-table thead th.th-lunch{background:var(--l-surf);border-left:2px solid var(--l-border)}
+.compare-table thead th.th-dinner{background:var(--l-bg2);border-left:2px solid var(--l-brd2)}
+.compare-table tbody tr{border-bottom:1px solid var(--l-border)}
+.compare-table tbody tr:last-child{border-bottom:none}
+.compare-table tbody td{padding:1rem 1.8rem;font-size:.86rem;vertical-align:top;line-height:1.6}
+.compare-table tbody td:first-child{font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:var(--lt3);font-weight:400;width:130px}
+.compare-table tbody td.td-lunch{background:rgba(232,221,208,.18);border-left:2px solid var(--l-border);color:var(--lt)}
+.compare-table tbody td.td-dinner{background:rgba(210,196,178,.2);border-left:2px solid var(--l-brd2);color:var(--lt)}
+.compare-table tbody td strong{color:var(--lt);font-weight:500}
+
+/* 가격 강조 */
+.price-big{font-family:var(--font-d);font-size:2.4rem;font-weight:300;color:var(--lt);letter-spacing:.02em;line-height:1}
+.price-big span{font-size:1rem;color:var(--lt2)}
+
+/* 코스 상세 탭 */
+.detail-tabs{display:flex;border-bottom:2px solid var(--l-border);margin-bottom:2rem}
+.d-tab{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;padding:1rem 2rem;border-bottom:2px solid transparent;margin-bottom:-2px;color:var(--lt3);transition:all .22s;cursor:pointer}
+.d-tab.on{color:var(--gold-dk);border-bottom-color:var(--gold-dk)}
+.d-tab:hover:not(.on){color:var(--lt)}
+.d-panel{display:none}
+.d-panel.on{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start}
+.d-list{list-style:none}
+.d-list li{display:flex;align-items:baseline;gap:.9rem;padding:.85rem 0;border-bottom:1px solid var(--l-border)}
+.d-list li:last-child{border-bottom:none}
+.d-num{font-family:var(--font-d);font-size:.7rem;color:var(--gold-dk);min-width:18px}
+.d-name{font-family:var(--font-s);font-size:.88rem;color:var(--lt);flex:1}
+.d-note{font-size:.62rem;letter-spacing:.06em;color:var(--lt3)}
+.d-desc{font-size:.88rem;line-height:1.9;color:var(--lt2)}
+.d-note-box{margin-top:1.5rem;padding:.9rem 1.2rem;background:var(--l-surf);border-left:2px solid var(--l-brd2);font-size:.75rem;color:var(--lt3);line-height:1.7;border-radius:0 2px 2px 0}
+
+/* ── VISIT POINTS ─────────────────────── */
+.vp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.vp-card{background:var(--d-surf);border:1px solid var(--d-border);border-radius:3px;padding:2rem;transition:border-color .22s}
+.vp-card:hover{border-color:var(--d-brd2)}
+.vp-icon{width:36px;height:36px;margin-bottom:1.2rem;display:flex;align-items:center;justify-content:center}
+.vp-icon svg{width:22px;height:22px;fill:none;stroke:var(--gold-dk);stroke-width:1.5}
+.vp-title{font-family:var(--font-s);font-size:.95rem;font-weight:400;color:var(--dt);margin-bottom:.5rem}
+.vp-body{font-size:.82rem;line-height:1.85;color:var(--dt2)}
+
+/* ── RESERVATION (밝은 섹션) ─────────── */
+.res-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.res-methods{display:flex;flex-direction:column;gap:.9rem;margin-top:1.8rem}
+.res-card{display:flex;align-items:center;gap:1.4rem;padding:1.4rem 1.6rem;background:var(--l-surf);border:1px solid var(--l-border);border-radius:3px;transition:border-color .22s}
+.res-card:hover{border-color:var(--l-brd2)}
+.rc-icon{width:38px;height:38px;background:var(--l-bg2);border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.rc-icon svg{width:16px;height:16px;fill:none;stroke:var(--gold-dk);stroke-width:1.5}
+.rc-info strong{display:block;font-size:.8rem;font-weight:500;color:var(--lt);margin-bottom:.15rem}
+.rc-info span{font-size:.67rem;letter-spacing:.07em;color:var(--lt2)}
+.rc-arrow{margin-left:auto;color:var(--lt3);font-size:.8rem}
+
+/* 정책 블록 */
+.policy-grid{display:flex;flex-direction:column;gap:1.6rem;margin-top:1.8rem}
+.policy-item{padding:1.4rem 1.6rem;background:var(--l-surf);border:1px solid var(--l-border);border-radius:3px}
+.pi-title{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:.7rem}
+.pi-body{font-size:.84rem;line-height:1.85;color:var(--lt2)}
+
+/* ── LOCATION ─────────────────────────── */
+.loc-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:5rem;align-items:start}
+.map-wrap{border-radius:3px;overflow:hidden;border:1px solid var(--d-border)}
+.map-wrap iframe{width:100%;aspect-ratio:4/3;display:block;border:none;filter:sepia(20%) brightness(.85) contrast(1.1)}
+.map-btns{display:flex;gap:.7rem;margin-top:1rem;flex-wrap:wrap}
+.map-btn{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dt2);border:1px solid var(--d-brd2);padding:.5rem 1rem;border-radius:2px;transition:all .2s}
+.map-btn:hover{color:var(--dt);border-color:var(--gold-dk)}
+.loc-info{display:flex;flex-direction:column;gap:2.2rem}
+.li-group h3{font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.li-group .addr{font-family:var(--font-s);font-size:1rem;line-height:1.65;color:var(--dt)}
+.li-group .addr-sub{font-size:.78rem;color:var(--dt2);margin-top:.4rem}
+.li-group .directions{font-size:.82rem;line-height:1.85;color:var(--dt2);margin-top:.6rem}
+.hours-tbl{width:100%;border-collapse:collapse}
+.hours-tbl tr{border-bottom:1px solid var(--d-border)}
+.hours-tbl td{padding:.85rem 0;font-size:.85rem}
+.hours-tbl td:first-child{font-size:.63rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dt3);width:110px}
+.hours-tbl td:last-child{color:var(--dt)}
+.badge{display:inline-flex;font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-dim);padding:.15rem .55rem;border-radius:20px;margin-left:.55rem;vertical-align:middle}
+
+/* ── FAQ (밝은 섹션) ──────────────────── */
+.faq-list{border-top:1px solid var(--l-border);margin-top:2.5rem}
+.fq-item{border-bottom:1px solid var(--l-border)}
+.fq-q{display:flex;justify-content:space-between;align-items:center;padding:1.35rem 0;cursor:pointer;user-select:none;gap:1.5rem}
+.fq-qtext{font-family:var(--font-s);font-size:.9rem;font-weight:400;color:var(--lt)}
+.fq-ico{position:relative;width:16px;height:16px;flex-shrink:0}
+.fq-ico::before,.fq-ico::after{content:'';position:absolute;background:var(--lt3);border-radius:1px;transition:all .28s}
+.fq-ico::before{width:12px;height:1px;top:7px;left:2px}
+.fq-ico::after{width:1px;height:12px;top:2px;left:7px}
+.fq-item.open .fq-ico::after{transform:scaleY(0)}
+.fq-ans{max-height:0;overflow:hidden;transition:max-height .38s ease,padding .3s}
+.fq-item.open .fq-ans{max-height:300px;padding-bottom:1.3rem}
+.fq-ans p{font-size:.84rem;line-height:1.9;color:var(--lt2)}
+
+/* ── FINAL CTA ────────────────────────── */
+.final-cta{text-align:center;position:relative;overflow:hidden}
+.final-cta-bg{position:absolute;inset:0}
+.final-cta-bg img{width:100%;height:100%;object-fit:cover;object-position:center 50%}
+.final-cta-bg::after{content:'';position:absolute;inset:0;background:rgba(28,22,16,.88)}
+.final-cta-inner{position:relative;z-index:1;max-width:660px;margin:0 auto}
+.final-cta h2{font-family:var(--font-d);font-size:clamp(2.2rem,5vw,3.8rem);font-weight:300;letter-spacing:.05em;line-height:1.2;color:var(--dt)}
+.final-cta h2 em{font-style:italic;color:var(--gold-lt)}
+.final-cta-sub{font-size:.88rem;color:var(--dt2);line-height:1.85;margin:1.2rem 0 2.5rem}
+.final-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* ── FOOTER ───────────────────────────── */
+footer{background:var(--d-bg2);border-top:1px solid var(--d-border);padding:4rem 0 2.5rem}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:4rem;padding-bottom:2.8rem;border-bottom:1px solid var(--d-border)}
+.foot-logo{font-family:var(--font-d);font-size:1.15rem;font-weight:400;letter-spacing:.12em;color:var(--dt);margin-bottom:.6rem}
+.foot-logo em{font-style:italic;color:var(--gold)}
+.foot-tagline{font-size:.82rem;color:var(--dt2);line-height:1.8;max-width:240px}
+.foot-sns{display:flex;gap:.8rem;margin-top:1.4rem}
+.sns{width:32px;height:32px;border:1px solid var(--d-brd2);border-radius:2px;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.sns:hover{border-color:var(--gold-dk)}
+.sns svg{width:14px;height:14px;fill:none;stroke:var(--dt2);stroke-width:1.5;transition:stroke .2s}
+.sns:hover svg{stroke:var(--dt)}
+.foot-col h4{font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1.3rem}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:.85rem}
+.foot-col li{font-size:.82rem;color:var(--dt2);line-height:1.6}
+.foot-col li strong{display:block;font-weight:400;color:var(--dt);margin-bottom:.1rem}
+.foot-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:2rem;gap:1rem}
+.foot-copy{font-size:.62rem;letter-spacing:.08em;color:var(--dt3)}
+.foot-biz{font-size:.6rem;color:var(--dt3);letter-spacing:.06em;line-height:1.6;text-align:right}
+
+/* ── FIXED MOBILE BAR ─────────────────── */
+.fixed-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;background:rgba(28,22,16,.97);backdrop-filter:blur(12px);border-top:1px solid var(--d-border);padding:.85rem 1.2rem;gap:.7rem}
+.fb-btn{flex:1;text-align:center;font-size:.7rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;padding:.9rem 1rem;border-radius:2px;transition:all .22s}
+.fb-main{background:var(--gold);color:var(--d-bg)}
+.fb-sub{border:1px solid var(--d-brd2);color:var(--dt2)}
+
+/* ── RESPONSIVE ───────────────────────── */
+@media(max-width:900px){
+  .nav-links,.nav .btn{display:none}
+  .nav-burger{display:flex}
+  .about-grid{grid-template-columns:1fr;gap:3rem}
+  .about-photo{aspect-ratio:16/9}
+  .d-panel.on{grid-template-columns:1fr;gap:2rem}
+  .vp-grid{grid-template-columns:1fr 1fr}
+  .res-grid{grid-template-columns:1fr;gap:3rem}
+  .loc-grid{grid-template-columns:1fr;gap:3rem}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:2.5rem}
+  .foot-brand{grid-column:1/-1}
+  .compare-table{font-size:.82rem}
+  .compare-table thead th,.compare-table tbody td{padding:.9rem 1rem}
+  .hero-strip-item{padding:.8rem 1rem}
+  .info-band-inner{flex-direction:column}
+  .ib-item{border-right:none;border-bottom:1px solid var(--d-border);padding:1rem 1.4rem}
+  .ib-item:last-child{border-bottom:none}
+}
+@media(max-width:600px){
+  .wrap{padding:0 1.4rem}
+  .pad{padding:4.5rem 0}
+  .pad-sm{padding:3rem 0}
+  .nav{padding:1.2rem 1.4rem}
+  .nav.sc{padding:.9rem 1.4rem}
+  .hero-body{padding:0 1.4rem 3rem}
+  .hero-strip{display:none}
+  .vp-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr;gap:2rem}
+  .foot-bottom{flex-direction:column;align-items:flex-start}
+  .fixed-bar{display:flex}
+  footer{padding:3.5rem 0 6rem}
+  .compare-table{display:block;overflow-x:auto}
+  .final-cta-btns{flex-direction:column;align-items:center}
+  .final-cta-btns .btn{width:100%;max-width:320px}
+  .d-panel.on{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a class="nav-logo" href="#top">스시려 <em>Premium</em></a>
+  <ul class="nav-links">
+    <li><a href="#course">코스</a></li>
+    <li><a href="#visit">방문 포인트</a></li>
+    <li><a href="#reservation">예약</a></li>
+    <li><a href="#location">위치</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a class="btn btn-gold" style="font-size:.68rem;padding:.65rem 1.5rem" href="https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium" target="_blank" rel="noopener">예약하기</a>
+  <button class="nav-burger" id="burger" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+
+<nav class="drawer" id="drawer" role="dialog" aria-label="메뉴">
+  <a href="#course" class="dn">코스 &amp; 메뉴</a>
+  <a href="#visit" class="dn">방문 포인트</a>
+  <a href="#reservation" class="dn">예약 안내</a>
+  <a href="#location" class="dn">위치</a>
+  <a href="#faq" class="dn">FAQ</a>
+  <a href="https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium" target="_blank" rel="noopener" class="d-cta">예약하기</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-img" role="img" aria-label="스시려 프리미엄 오마카세">
+    <img src="https://d12zq4w4guyljn.cloudfront.net/20240507085900100_photo_dc5ead075dce.webp" alt="스시려 프리미엄 시그니처 스시" loading="eager"/>
+  </div>
+  <div class="hero-body">
+    <p class="hero-kicker">강남역 5번 출구 도보 7분 · 서초 아크로텔 2층 · 예약제 스시 오마카세</p>
+    <h1 class="hero-title">스시려<em> 프리미엄</em></h1>
+
+    <!-- 핵심 정보 — 3초 안에 보여야 할 것 (PC) -->
+    <div class="hero-strip" aria-label="핵심 예약 정보">
+      <div class="hero-strip-item"><p class="strip-label">런치</p><p class="strip-val"><strong>70,000원</strong></p></div>
+      <div class="hero-strip-item"><p class="strip-label">디너</p><p class="strip-val"><strong>140,000원</strong></p></div>
+      <div class="hero-strip-item"><p class="strip-label">좌석</p><p class="strip-val">다찌 + 룸</p></div>
+      <div class="hero-strip-item"><p class="strip-label">영업</p><p class="strip-val">매일 운영</p></div>
+      <div class="hero-strip-item"><p class="strip-label">예약</p><p class="strip-val">캐치테이블</p></div>
+    </div>
+
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium" target="_blank" rel="noopener">캐치테이블 예약</a>
+      <a class="btn btn-outline-light" href="tel:02-525-0900">02-525-0900</a>
+    </div>
+  </div>
+</section>
+
+<!-- INFO BAND — 모바일에서 hero 아래 핵심 정보 -->
+<div class="info-band sec-surf">
+  <div class="wrap">
+    <div class="info-band-inner">
+      <div class="ib-item"><p class="ib-label">런치 오마카세</p><p class="ib-val"><strong style="color:var(--gold)">70,000원</strong> / 1인</p></div>
+      <div class="ib-item"><p class="ib-label">디너 오마카세</p><p class="ib-val"><strong style="color:var(--gold)">140,000원</strong> / 1인</p></div>
+      <div class="ib-item"><p class="ib-label">좌석 유형</p><p class="ib-val">카운터(다찌) · 프라이빗 룸</p></div>
+      <div class="ib-item"><p class="ib-label">접근</p><p class="ib-val">강남역 5번 출구 도보 7분</p></div>
+      <div class="ib-item"><p class="ib-label">예약</p><p class="ib-val">캐치테이블 · 전화</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="sec-dark pad" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="reveal">
+        <span class="eyebrow">About</span>
+        <span class="rule"></span>
+        <h2 class="sec-title">강남역 도보 7분,<br/>룸과 다찌를 갖춘<br/>예약제 오마카세.</h2>
+        <div class="about-body">
+          <p>서초구 효령로77길, 아크로텔 2층에 자리한 스시려 프리미엄은 카운터(다찌)와 프라이빗 룸을 함께 운영하는 강남 서초의 예약제 스시 오마카세입니다.</p>
+          <p>런치 70,000원부터 오마카세를 경험할 수 있어 기념일·데이트·접대 식사 모두에 활용하기 좋습니다. 코스 마지막에는 앵콜 피스를 한 번 더 드릴 수 있습니다.</p>
+        </div>
+        <div class="about-tags">
+          <span class="tag">예약제 운영</span>
+          <span class="tag">노키즈존</span>
+          <span class="tag">강남역 도보 7분</span>
+          <span class="tag">기념일 · 데이트</span>
+          <span class="tag">접대 식사</span>
+          <span class="tag">다찌 + 룸</span>
+        </div>
+        <div class="sec-cta">
+          <a class="btn btn-gold" href="https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium" target="_blank" rel="noopener">예약하기</a>
+          <a class="btn btn-outline-light" href="#course">코스 보기</a>
+        </div>
+      </div>
+      <div class="about-photo reveal" style="transition-delay:.15s">
+        <img src="https://d12zq4w4guyljn.cloudfront.net/20240507085900462_photo_dc5ead075dce.webp" alt="스시려 프리미엄 오마카세 코스" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSE — 밝은 메뉴판 섹션 -->
+<section class="sec-light pad" id="course">
+  <div class="wrap">
+    <div class="ct-header reveal">
+      <span class="eyebrow dark">Course Menu</span>
+      <h2 class="sec-title dark" style="margin-top:.8rem">런치 vs 디너 비교</h2>
+      <p style="font-size:.88rem;color:var(--lt2);margin-top:.8rem;line-height:1.7">코스 구성은 당일 입하 식재료에 따라 변동될 수 있습니다.</p>
+    </div>
+
+    <!-- 비교표 -->
+    <div class="reveal" style="overflow-x:auto">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="th-lunch">
+              <div style="font-size:.6rem;letter-spacing:.2em;opacity:.7;margin-bottom:.3rem">LUNCH</div>
+              <div class="price-big">70,000<span>원</span></div>
+              <div style="font-size:.68rem;color:var(--lt2);margin-top:.3rem">1인 기준 · 세금 포함</div>
+            </th>
+            <th class="th-dinner">
+              <div style="font-size:.6rem;letter-spacing:.2em;opacity:.7;margin-bottom:.3rem">DINNER</div>
+              <div class="price-big">140,000<span>원</span></div>
+              <div style="font-size:.68rem;color:var(--lt2);margin-top:.3rem">1인 기준 · 세금 포함</div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>운영 시간</td>
+            <td class="td-lunch">11:40 / 13:00 (2부제)</td>
+            <td class="td-dinner">18:30 / 20:00 (2부제)</td>
+          </tr>
+          <tr>
+            <td>코스 구성</td>
+            <td class="td-lunch">전채 + 스시 9~12피스 + 마무리</td>
+            <td class="td-dinner">전채 + 스시 12~15피스 + 마무리</td>
+          </tr>
+          <tr>
+            <td>시그니처</td>
+            <td class="td-lunch">전복 보리 리조또 · 청어 마끼</td>
+            <td class="td-dinner">성게딱새우 · 니모노 · 전복 보리 리조또</td>
+          </tr>
+          <tr>
+            <td>앵콜 피스</td>
+            <td class="td-lunch"><strong>제공 (선택)</strong></td>
+            <td class="td-dinner"><strong>제공 (선택)</strong></td>
+          </tr>
+          <tr>
+            <td>좌석 선택</td>
+            <td class="td-lunch">카운터 / 룸 선택 가능</td>
+            <td class="td-dinner">카운터 / 룸 선택 가능</td>
+          </tr>
+          <tr>
+            <td>추천 상황</td>
+            <td class="td-lunch">데이트 · 가족 식사 · 점심 오마카세</td>
+            <td class="td-dinner"><strong>기념일 · 접대 · 특별한 저녁</strong></td>
+          </tr>
+          <tr>
+            <td>예약</td>
+            <td class="td-lunch">캐치테이블 / 전화</td>
+            <td class="td-dinner">캐치테이블 / 전화</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 코스 상세 탭 -->
+    <div class="reveal" style="transition-delay:.1s">
+      <div class="detail-tabs" role="tablist">
+        <button class="d-tab on" data-panel="dp-lunch" role="tab">런치 상세 구성</button>
+        <button class="d-tab" data-panel="dp-dinner" role="tab">디너 상세 구성</button>
+      </div>
+
+      <div class="d-panel on" id="dp-lunch">
+        <ul class="d-list">
+          <li><span class="d-num">01</span><span class="d-name">차완무시</span><span class="d-note">단호박</span></li>
+          <li><span class="d-num">02</span><span class="d-name">전복 보리 리조또</span><span class="d-note">전복 내장 소스 · 시그니처</span></li>
+          <li><span class="d-num">03</span><span class="d-name">계절 생선 요리</span><span class="d-note">당일 변동</span></li>
+          <li><span class="d-num">04</span><span class="d-name">청어 마끼 (식빵 튀김)</span><span class="d-note">시그니처</span></li>
+          <li><span class="d-num">05</span><span class="d-name">스시 9~12 피스</span><span class="d-note">황돔 · 농어 · 방어 · 참치 등 (예시)</span></li>
+          <li><span class="d-num">06</span><span class="d-name">미소시루 · 소바</span></li>
+          <li><span class="d-num">07</span><span class="d-name">앵콜 피스 (선택)</span></li>
+          <li><span class="d-num">08</span><span class="d-name">디저트</span></li>
+        </ul>
+        <div>
+          <p class="d-desc">가격 대비 구성이 풍부해 강남역 근처 점심 오마카세를 찾는 분들께 추천합니다. 다찌에서 셰프의 작업을 가까이 볼 수 있고, 룸 선택도 가능합니다.</p>
+          <div class="d-note-box">구성은 당일 입하 재료와 계절에 따라 변동됩니다. 아래는 대표 예시이며 실제 방문 시 달라질 수 있습니다.</div>
+          <div style="margin-top:1.5rem">
+            <a class="btn btn-outline-dark" href="https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium" target="_blank" rel="noopener">런치 예약하기</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-panel" id="dp-dinner">
+        <ul class="d-list">
+          <li><span class="d-num">01</span><span class="d-name">차완무시</span></li>
+          <li><span class="d-num">02</span><span class="d-name">전복 보리 리조또</span><span class="d-note">전복 내장 소스</span></li>
+          <li><span class="d-num">03</span><span class="d-name">니모노 — 계절 생선 조림</span><span class="d-note">가츠오부시 소스</span></li>
+          <li><span class="d-num">04</span><span class="d-name">성게딱새우 초밥 · 마끼</span><span class="d-note">시그니처</span></li>
+          <li><span class="d-num">05</span><span class="d-name">스시 12~15 피스</span><span class="d-note">우니 · 대방어 · 참치뱃살 등 (예시)</span></li>
+          <li><span class="d-num">06</span><span class="d-name">게살 수프 · 미소시루</span></li>
+          <li><span class="d-num">07</span><span class="d-name">앵콜 피스 (선택)</span></li>
+          <li><span class="d-num">08</span><span class="d-name">소바 · 디저트</span></li>
+        </ul>
+        <div>
+          <p class="d-desc">기념일, 접대, 소중한 자리에 어울리는 코스입니다. 런치보다 더 많은 피스와 식재료로 구성되며, 성게딱새우 마끼는 디너의 시그니처입니다. 프라이빗 룸 예약을 권장합니다.</p>
+          <div class="d-note-box">구성은 당일 입하 재료와 계절에 따라 변동됩니다. 아래는 대표 예시이며 실제 방문 시 달라질 수 있습니다.</div>
+          <div style="margin-top:1.5rem">
+            <a class="btn btn-outline-dark" href="https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium" target="_blank" rel="noopener">디너 예약하기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY (풀블리드, 섹션 구분용) -->
+<div style="display:grid;grid-template-columns:repeat(4,1fr);height:240px" aria-hidden="true">
+  <div style="overflow:hidden"><img src="https://d12zq4w4guyljn.cloudfront.net/20240322125007_photo1_21dfcde4afc6.webp" alt="" loading="lazy" style="transition:transform .6s"/></div>
+  <div style="overflow:hidden"><img src="https://d12zq4w4guyljn.cloudfront.net/20240322125007_photo2_21dfcde4afc6.webp" alt="" loading="lazy" style="transition:transform .6s"/></div>
+  <div style="overflow:hidden"><img src="https://d12zq4w4guyljn.cloudfront.net/20240322125007_photo3_21dfcde4afc6.webp" alt="" loading="lazy" style="transition:transform .6s"/></div>
+  <div style="overflow:hidden"><img src="https://d12zq4w4guyljn.cloudfront.net/20240507085900100_photo_dc5ead075dce.webp" alt="" loading="lazy" style="transition:transform .6s"/></div>
+</div>
+
+<!-- VISIT POINTS -->
+<section class="sec-dark2 pad" id="visit">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Why Visit</span>
+      <span class="rule"></span>
+      <h2 class="sec-title">방문 포인트</h2>
+    </div>
+    <div class="vp-grid">
+      <div class="vp-card reveal">
+        <div class="vp-icon"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+        <p class="vp-title">강남역 도보 7분</p>
+        <p class="vp-body">신분당선 강남역 5번 출구에서 480m. 강남 서초 오마카세 중 접근성이 좋은 편입니다. 주차도 건물 내 가능합니다.</p>
+      </div>
+      <div class="vp-card reveal" style="transition-delay:.07s">
+        <div class="vp-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <p class="vp-title">런치 70,000원부터</p>
+        <p class="vp-body">강남 서초 오마카세 중 런치 코스를 70,000원에 경험할 수 있습니다. 가짓수와 양 모두 만족스럽다는 리뷰가 많습니다.</p>
+      </div>
+      <div class="vp-card reveal" style="transition-delay:.14s">
+        <div class="vp-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <p class="vp-title">다찌 + 프라이빗 룸</p>
+        <p class="vp-body">카운터(다찌)에서 셰프의 작업을 가까이 보거나, 프라이빗 룸에서 조용한 식사를 선택할 수 있습니다. 룸은 예약 시 선택 또는 전화 문의.</p>
+      </div>
+      <div class="vp-card reveal" style="transition-delay:.07s">
+        <div class="vp-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <p class="vp-title">앵콜 피스 제공</p>
+        <p class="vp-body">코스 마지막에 원하는 스시를 한 번 더 드실 수 있습니다. 방문자 리뷰에서 인상적이었다는 언급이 많습니다.</p>
+      </div>
+      <div class="vp-card reveal" style="transition-delay:.14s">
+        <div class="vp-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <p class="vp-title">기념일 · 데이트 추천</p>
+        <p class="vp-body">기념일 방문 시 예약 메모에 남겨 주시면 도움이 됩니다. 강남역 기념일 오마카세, 강남 데이트 오마카세로 많이 찾는 곳입니다.</p>
+      </div>
+      <div class="vp-card reveal" style="transition-delay:.21s">
+        <div class="vp-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <p class="vp-title">2부제 운영</p>
+        <p class="vp-body">런치 2부(11:40 / 13:00), 디너 2부(18:30 / 20:00)로 운영. 원하는 시간대를 캐치테이블에서 선택하세요.</p>
+      </div>
+    </div>
+    <div class="sec-cta reveal" style="margin-top:2.5rem">
+      <a class="btn btn-gold" href="https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium" target="_blank" rel="noopener">예약하기</a>
+      <a class="btn btn-outline-light" href="tel:02-525-0900">전화 문의</a>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATION — 밝은 섹션 -->
+<section class="sec-light2 pad" id="reservation">
+  <div class="wrap">
+    <div class="res-grid">
+      <div class="reveal">
+        <span class="eyebrow dark">Reservation</span>
+        <span class="rule dark"></span>
+        <h2 class="sec-title dark">예약 안내</h2>
+        <p style="font-size:.88rem;color:var(--lt2);margin-top:1rem;line-height:1.85">스시려 프리미엄은 100% 예약제로 운영됩니다.</p>
+        <div class="res-methods">
+          <a class="res-card" href="https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium" target="_blank" rel="noopener">
+            <div class="rc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+            <div class="rc-info"><strong>캐치테이블 — 온라인 예약</strong><span>실시간 예약 · 좌석 선택 가능 · 권장</span></div>
+            <span class="rc-arrow">→</span>
+          </a>
+          <a class="res-card" href="tel:02-525-0900">
+            <div class="rc-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.2 6.11 19.79 19.79 0 01.1 2.38 2 2 0 012.09.27l3-.05a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.13 8.07a16 16 0 006.29 6.29l1.27-1.23a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+            <div class="rc-info"><strong>전화 예약</strong><span>02-525-0900</span></div>
+            <span class="rc-arrow">→</span>
+          </a>
+        </div>
+        <div style="margin-top:1.5rem">
+          <p style="font-size:.75rem;color:var(--lt3);line-height:1.7">예약 가능 시간: 런치 11:40 / 13:00 · 디너 18:30 / 20:00</p>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:.12s">
+        <div class="policy-grid">
+          <div class="policy-item">
+            <p class="pi-title">예약 전 확인 사항</p>
+            <p class="pi-body">· 알레르기 · 기피 식재료는 예약 시 메모 또는 전화로 미리 알려 주세요<br/>· 룸 이용은 캐치테이블 예약 시 선택 또는 전화 문의<br/>· 기념일 방문 시 예약 메모에 남겨 주시면 도움이 됩니다<br/>· 착석 10분 전 도착 권장</p>
+          </div>
+          <div class="policy-item">
+            <p class="pi-title">취소 · 노쇼 정책</p>
+            <p class="pi-body">취소 및 변경은 예약 플랫폼 기준을 따릅니다. 자세한 사항은 캐치테이블 예약 시 확인하거나 매장에 문의해 주세요.</p>
+          </div>
+          <div class="policy-item">
+            <p class="pi-title">노키즈존</p>
+            <p class="pi-body">스시려 프리미엄은 노키즈존으로 운영됩니다.</p>
+          </div>
+          <div class="policy-item">
+            <p class="pi-title">콜키지 · 주류</p>
+            <p class="pi-body">콜키지 여부 및 조건은 매장에 직접 문의해 주세요. 산토리 생맥주 등 자체 주류 제공.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="sec-dark pad" id="location">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:3rem">
+      <span class="eyebrow">Location &amp; Hours</span>
+      <span class="rule"></span>
+      <h2 class="sec-title">위치 · 영업시간</h2>
+    </div>
+    <div class="loc-grid">
+      <div class="reveal">
+        <div class="map-wrap">
+          <iframe src="https://map.kakao.com/?embed=true&marker=true&maptype=TYPE_MAP&itemId=1839083027" title="스시려 프리미엄 위치" loading="lazy" aria-label="지도"></iframe>
+        </div>
+        <div class="map-btns">
+          <a class="map-btn" href="https://map.kakao.com/link/search/스시려 프리미엄 강남" target="_blank" rel="noopener">카카오맵</a>
+          <a class="map-btn" href="https://map.naver.com/v5/search/스시려 프리미엄" target="_blank" rel="noopener">네이버지도</a>
+          <a class="map-btn" href="https://www.google.com/maps/search/스시려+프리미엄+강남" target="_blank" rel="noopener">구글맵</a>
+        </div>
+      </div>
+      <div class="loc-info reveal" style="transition-delay:.15s">
+        <div class="li-group">
+          <h3>주소</h3>
+          <p class="addr">서울 서초구<br/>효령로77길 34<br/>아크로텔 2층 206호</p>
+          <p class="addr-sub">신분당선 강남역 5번 출구 · 도보 480m (약 7분)</p>
+          <p class="directions">강남역 5번 출구에서 교대 방향으로 직진하면 아크로텔 건물이 나옵니다. 입구가 건물 안쪽에 위치하므로 처음 방문 시 지도 앱을 함께 확인해 주세요.</p>
+        </div>
+        <div class="li-group">
+          <h3>영업시간</h3>
+          <table class="hours-tbl">
+            <tbody>
+              <tr><td>런치</td><td>11:40 – 14:40</td></tr>
+              <tr><td>브레이크</td><td style="font-size:.75rem;color:var(--dt3)">14:40 – 18:30</td></tr>
+              <tr><td>디너</td><td>18:30 – 21:50</td></tr>
+              <tr><td>휴무</td><td>매장 문의<span class="badge">캐치테이블 기준</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="li-group">
+          <h3>편의시설</h3>
+          <p style="font-size:.84rem;color:var(--dt2);line-height:1.9">주차 가능 (건물 내) · 무선 인터넷<br/>남/녀 화장실 구분 · 포장 가능</p>
+        </div>
+        <div style="margin-top:1.5rem">
+          <a class="btn btn-gold" href="https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium" target="_blank" rel="noopener">예약하기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ — 밝은 섹션 -->
+<section class="sec-light pad" id="faq">
+  <div class="wrap" style="max-width:720px">
+    <div class="reveal">
+      <span class="eyebrow dark">FAQ</span>
+      <span class="rule dark"></span>
+      <h2 class="sec-title dark">예약 전 자주 묻는 질문</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="fq-item">
+        <div class="fq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="fq-qtext">예약은 꼭 해야 하나요? 워크인이 가능한가요?</span>
+          <span class="fq-ico" aria-hidden="true"></span>
+        </div>
+        <div class="fq-ans"><p>스시려 프리미엄은 100% 예약제로 운영됩니다. 워크인 입장은 어렵습니다. 캐치테이블 온라인 예약 또는 전화(02-525-0900)로 사전 예약 후 방문해 주세요.</p></div>
+      </div>
+      <div class="fq-item">
+        <div class="fq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="fq-qtext">룸과 카운터(다찌) 중 선택할 수 있나요?</span>
+          <span class="fq-ico" aria-hidden="true"></span>
+        </div>
+        <div class="fq-ans"><p>캐치테이블 예약 시 좌석 유형을 선택할 수 있습니다. 카운터(다찌)는 셰프의 스시 작업을 가까이에서 볼 수 있는 자리이며, 프라이빗 룸은 소수 인원이 독립된 공간에서 조용히 식사하기 좋습니다. 룸 문의는 전화(02-525-0900)로도 가능합니다.</p></div>
+      </div>
+      <div class="fq-item">
+        <div class="fq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="fq-qtext">런치와 디너의 가장 큰 차이가 뭔가요?</span>
+          <span class="fq-ico" aria-hidden="true"></span>
+        </div>
+        <div class="fq-ans"><p>런치(70,000원)는 스시 9~12피스 + 전채로 구성되며, 디너(140,000원)는 스시 12~15피스에 성게딱새우, 니모노 등이 추가되어 더 풍부한 구성입니다. 기념일이나 접대 자리라면 디너를 추천드립니다. 정확한 당일 구성은 입하 재료에 따라 변동됩니다.</p></div>
+      </div>
+      <div class="fq-item">
+        <div class="fq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="fq-qtext">알레르기나 못 먹는 재료가 있으면 어떻게 하나요?</span>
+          <span class="fq-ico" aria-hidden="true"></span>
+        </div>
+        <div class="fq-ans"><p>예약 시 캐치테이블 메모란 또는 전화(02-525-0900)로 미리 알려 주시면 최대한 대응해 드립니다. 오마카세 특성상 완전 대체가 어려울 수 있으니 사전 문의를 꼭 부탁드립니다.</p></div>
+      </div>
+      <div class="fq-item">
+        <div class="fq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="fq-qtext">취소나 변경은 언제까지 가능한가요?</span>
+          <span class="fq-ico" aria-hidden="true"></span>
+        </div>
+        <div class="fq-ans"><p>취소 및 변경 정책은 캐치테이블 예약 기준을 따릅니다. 정확한 환불 조건은 예약 시 플랫폼에서 확인해 주시고, 긴급한 경우 매장(02-525-0900)으로 직접 연락해 주세요.</p></div>
+      </div>
+      <div class="fq-item">
+        <div class="fq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="fq-qtext">강남역에서 정확히 어떻게 오나요?</span>
+          <span class="fq-ico" aria-hidden="true"></span>
+        </div>
+        <div class="fq-ans"><p>신분당선 강남역 5번 출구로 나와 교대 방향으로 약 480m (도보 7분) 직진하시면 아크로텔 건물이 나옵니다. 건물 입구가 안쪽에 위치하므로 처음 방문 시 지도 앱(카카오맵 · 네이버지도)을 함께 사용하시길 권장합니다.</p></div>
+      </div>
+      <div class="fq-item">
+        <div class="fq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="fq-qtext">주차가 가능한가요?</span>
+          <span class="fq-ico" aria-hidden="true"></span>
+        </div>
+        <div class="fq-ans"><p>아크로텔 건물 내 주차가 가능합니다. 강남역 인근 특성상 주차 공간이 제한될 수 있으므로 대중교통(신분당선 강남역 5번 출구) 이용을 권장합니다.</p></div>
+      </div>
+      <div class="fq-item">
+        <div class="fq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="fq-qtext">아이와 함께 방문할 수 있나요?</span>
+          <span class="fq-ico" aria-hidden="true"></span>
+        </div>
+        <div class="fq-ans"><p>스시려 프리미엄은 노키즈존으로 운영됩니다. 다른 손님들의 편안한 식사 환경을 위한 배려임을 양해 부탁드립니다.</p></div>
+      </div>
+    </div>
+    <div class="sec-cta reveal" style="margin-top:2.5rem">
+      <a class="btn btn-outline-dark" href="https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium" target="_blank" rel="noopener">캐치테이블 예약</a>
+      <a class="btn btn-outline-dark" href="tel:02-525-0900">02-525-0900</a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta pad">
+  <div class="final-cta-bg">
+    <img src="https://d12zq4w4guyljn.cloudfront.net/20240507085900462_photo_dc5ead075dce.webp" alt="" loading="lazy"/>
+  </div>
+  <div class="wrap">
+    <div class="final-cta-inner reveal">
+      <span class="eyebrow" style="display:block;text-align:center;margin-bottom:1.4rem">예약하기</span>
+      <h2>강남역 도보 7분,<br/><em>오늘 예약 가능한</em><br/>서초 오마카세.</h2>
+      <p class="final-cta-sub">런치 70,000원 · 디너 140,000원<br/>서울 서초구 효령로77길 34 아크로텔 2층 206호</p>
+      <div class="final-cta-btns">
+        <a class="btn btn-gold" href="https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium" target="_blank" rel="noopener">캐치테이블 예약</a>
+        <a class="btn btn-outline-light" href="tel:02-525-0900">02-525-0900</a>
+        <a class="btn btn-outline-light" href="https://map.kakao.com/link/search/스시려 프리미엄 강남" target="_blank" rel="noopener">위치 보기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <p class="foot-logo">스시려 <em>Premium</em></p>
+        <p class="foot-tagline">서울 서초, 예약제 스시 오마카세.<br/>강남역 5번 출구 도보 7분.</p>
+        <div class="foot-sns">
+          <a class="sns" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="인스타그램">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a class="sns" href="https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium" target="_blank" rel="noopener" aria-label="캐치테이블">
+            <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>정보</h4>
+        <ul>
+          <li><strong>주소</strong>서울 서초구 효령로77길 34<br/>아크로텔 2층 206호</li>
+          <li><strong>전화</strong>02-525-0900</li>
+          <li><strong>예약</strong>캐치테이블</li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>영업시간</h4>
+        <ul>
+          <li><strong>런치</strong>11:40 – 14:40</li>
+          <li><strong>디너</strong>18:30 – 21:50</li>
+          <li style="font-size:.75rem;color:var(--dt3)">브레이크 14:40–18:30</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p class="foot-copy">© <span id="yr"></span> 스시려 프리미엄 · 서울 서초</p>
+      <p class="foot-biz">문의: 02-525-0900</p>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE FIXED BAR -->
+<div class="fixed-bar" aria-label="빠른 예약">
+  <a class="fb-btn fb-main" href="https://app.catchtable.co.kr/ct/shop/SushiRyeoPremium" target="_blank" rel="noopener">캐치테이블 예약</a>
+  <a class="fb-btn fb-sub" href="tel:02-525-0900">전화</a>
+</div>
+
+<script>
+/* ── 연도 ── */
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* ── nav 스크롤 ── */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('sc', scrollY > 50), {passive:true});
+
+/* ── 햄버거 ── */
+const burger = document.getElementById('burger');
+const drawer = document.getElementById('drawer');
+burger.addEventListener('click', () => {
+  const o = drawer.classList.toggle('open');
+  burger.setAttribute('aria-expanded', o);
+  document.body.style.overflow = o ? 'hidden' : '';
+});
+document.querySelectorAll('.dn, .d-cta').forEach(el =>
+  el.addEventListener('click', () => {
+    drawer.classList.remove('open');
+    burger.setAttribute('aria-expanded','false');
+    document.body.style.overflow = '';
+  })
+);
+
+/* ── 코스 탭 ── */
+document.querySelectorAll('.d-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.d-tab').forEach(b => b.classList.remove('on'));
+    document.querySelectorAll('.d-panel').forEach(p => p.classList.remove('on'));
+    btn.classList.add('on');
+    document.getElementById(btn.dataset.panel).classList.add('on');
+  });
+});
+
+/* ── FAQ ── */
+document.querySelectorAll('.fq-q').forEach(q => {
+  const toggle = () => {
+    const item = q.closest('.fq-item');
+    const was = item.classList.contains('open');
+    document.querySelectorAll('.fq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.fq-q').setAttribute('aria-expanded','false');
+    });
+    if (!was) { item.classList.add('open'); q.setAttribute('aria-expanded','true'); }
+  };
+  q.addEventListener('click', toggle);
+  q.addEventListener('keydown', e => { if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle();} });
+});
+
+/* ── Reveal ── */
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
+}, {threshold:.1, rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
